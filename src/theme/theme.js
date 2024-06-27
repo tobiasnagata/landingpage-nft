@@ -56,13 +56,13 @@ const fontSize = {
     main: "1rem",
   },
   body1: {
-    main: "0.875rem",
+    main: "1rem",
   },
   body2: {
-    main: "0.75rem",
+    main: "0.875rem",
   },
   button: {
-    main: "0.875rem",
+    main: "1rem",
   },
 };
 
@@ -90,8 +90,8 @@ const color_dark = {
     primary: "#FFF",
   },
   background: {
-    default: "#000",
-    paper: "#000",
+    default: "#110929",
+    paper: "#110929",
   },
 };
 

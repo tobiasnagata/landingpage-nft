@@ -1,7 +1,11 @@
 import { Container as MuiContainer } from "@mui/material";
 
 const Container = ({ children, sx }) => {
-  return <MuiContainer sx={{ ...sx, pt: 12 }}>{children}</MuiContainer>;
+  return (
+    <MuiContainer maxWidth="xl" sx={{ ...sx }}>
+      {children}
+    </MuiContainer>
+  );
 };
 
 export default Container;
