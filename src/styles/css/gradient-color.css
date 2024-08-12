@@ -1,0 +1,14 @@
+/* TEXT */
+.gradient-text {
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* COLOR GRADIENT */
+.gradient-light-purple-to-dark-purple {
+  background: -webkit-linear-gradient(-30deg, #b235ff, #001447);
+}
+.gradient-light-purple-to-blue {
+  background: -webkit-linear-gradient(-30deg, #8d1cfe 40%, #0038ed 100%);
+}

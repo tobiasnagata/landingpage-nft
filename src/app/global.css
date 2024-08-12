@@ -3,11 +3,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* TEXT GRADIENT */
-.gradient-light-purple-to-dark-purple {
-  background: -webkit-linear-gradient(0deg, #b235ff, #001447);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
