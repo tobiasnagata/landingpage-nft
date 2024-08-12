@@ -1,3 +1,10 @@
+import { Box } from "@mui/material";
+import Hero from "./_section/Hero";
+
 export default function Home() {
-  return <></>;
+  return (
+    <Box sx={{overflow: 'hidden'}}>
+      <Hero />
+    </Box>
+  );
 }

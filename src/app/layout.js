@@ -1,4 +1,7 @@
+// CSS
 import "./global.css";
+import "@/styles/css/gradient-color.css";
+
 import { ThemeProvider } from "@/contexts/theme";
 
 // static metadata

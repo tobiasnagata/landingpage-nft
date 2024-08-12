@@ -82,7 +82,7 @@ const Header = () => {
                   <Typography
                     component={"span"}
                     variant="inherit"
-                    className="gradient-light-purple-to-dark-purple"
+                    className="gradient-text gradient-light-purple-to-dark-purple"
                   >
                     Apollo
                   </Typography>
@@ -126,7 +126,7 @@ const Header = () => {
         <motion.div
           animate={drawer ? "visible" : "hidden"}
           initial={false}
-          style={{ position: "fixed", top: 0, right: 0 }}
+          style={{ position: "fixed", top: 0, right: 0, zIndex: 9999 }}
         >
           {/* Background */}
           <motion.div
@@ -153,7 +153,7 @@ const Header = () => {
               alignItems: "center",
               width: "100vw",
               height: "100vh",
-              gap: theme.spacing(3),
+              gap: theme.spacing(4),
             }}
           >
             {navLink.map((link) => {
@@ -161,7 +161,7 @@ const Header = () => {
                 <motion.div variants={variant.v_menu_item} key={link.href}>
                   <MUILink
                     component={Link}
-                    variant="h2"
+                    variant="h3"
                     color="inherit"
                     href={link.href}
                     sx={{
