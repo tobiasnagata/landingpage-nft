@@ -28,46 +28,253 @@ const fontWeight = {
   black: 900,
 };
 
-const fontSize = {
+const fontStyle = {
   h1: {
-    main: "3.5rem",
-    xl: "6rem",
+    xs: {
+      fontSize: "2.6rem",
+      lineHeight: "0.95",
+    },
+    sm: {
+      fontSize: "4rem",
+      lineHeight: "0.95",
+    },
+    md: {
+      fontSize: "3.3rem",
+      lineHeight: "0.95",
+    },
+    lg: {
+      fontSize: "4.55rem",
+      lineHeight: "0.95",
+    },
+    xl: {
+      fontSize: "5.875rem",
+      lineHeight: "0.95",
+    },
   },
   h2: {
-    main: "3rem",
+    xs: {
+      fontSize: "2.4rem",
+      lineHeight: "1.1",
+    },
+    sm: {
+      fontSize: "2.8rem",
+      lineHeight: "1.1",
+    },
+    md: {
+      fontSize: "3.4rem",
+      lineHeight: "1.1",
+    },
+    lg: {
+      fontSize: "3.8rem",
+      lineHeight: "1.1",
+    },
+    xl: {
+      fontSize: "4.2rem",
+      lineHeight: "1.1",
+    },
   },
   h3: {
-    main: "2.5rem",
+    xs: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
+    sm: {
+      fontSize: "2.25rem",
+      lineHeight: "1.1",
+    },
+    md: {
+      fontSize: "2.625rem",
+      lineHeight: "1.1",
+    },
+    lg: {
+      fontSize: "2.75rem",
+      lineHeight: "1.1",
+    },
+    xl: {
+      fontSize: "3rem",
+      lineHeight: "1.1",
+    },
   },
   h4: {
-    main: "2rem",
+    xs: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
+    sm: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
+    md: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
+    lg: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
+    xl: {
+      fontSize: "2rem",
+      lineHeight: "1.1",
+    },
   },
   h5: {
-    main: "1.5rem",
+    xs: {
+      fontSize: "1.5rem",
+      lineHeight: "1.1",
+    },
+    sm: {
+      fontSize: "1.5rem",
+      lineHeight: "1.1",
+    },
+    md: {
+      fontSize: "1.5rem",
+      lineHeight: "1.1",
+    },
+    lg: {
+      fontSize: "1.5rem",
+      lineHeight: "1.1",
+    },
+    xl: {
+      fontSize: "1.5rem",
+      lineHeight: "1.1",
+    },
   },
   h6: {
-    main: "1.125rem",
+    xs: {
+      fontSize: "1.125rem",
+      lineHeight: "1.1",
+    },
+    sm: {
+      fontSize: "1.125rem",
+      lineHeight: "1.1",
+    },
+    md: {
+      fontSize: "1.125rem",
+      lineHeight: "1.1",
+    },
+    lg: {
+      fontSize: "1.125rem",
+      lineHeight: "1.1",
+    },
+    xl: {
+      fontSize: "1.125rem",
+      lineHeight: "1.1",
+    },
   },
-
   subtitle1: {
-    main: "1.25rem",
+    xs: {
+      fontSize: "1rem",
+      lineHeight: "1.625",
+    },
+    sm: {
+      fontSize: "1rem",
+      lineHeight: "1.625",
+    },
+    md: {
+      fontSize: "1rem",
+      lineHeight: "1.625",
+    },
+    lg: {
+      fontSize: "1rem",
+      lineHeight: "1.625",
+    },
+    xl: {
+      fontSize: "1rem",
+      lineHeight: "1.625",
+    },
   },
   subtitle2: {
-    main: "1rem",
+    xs: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    sm: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    md: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    lg: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    xl: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
   },
   body1: {
-    main: "1rem",
+    xs: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+    },
+    sm: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+    },
+    md: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+    },
+    lg: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+    },
+    xl: {
+      fontSize: "1rem",
+      lineHeight: "1.5",
+    },
   },
   body2: {
-    main: "0.875rem",
+    xs: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    sm: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    md: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    lg: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
+    xl: {
+      fontSize: "0.875rem",
+      lineHeight: "1.5",
+    },
   },
   button: {
-    main: "1rem",
+    xs: {
+      fontSize: "1rem",
+      lineHeight: "1.75",
+    },
+    sm: {
+      fontSize: "1rem",
+      lineHeight: "1.75",
+    },
+    md: {
+      fontSize: "1rem",
+      lineHeight: "1.75",
+    },
+    lg: {
+      fontSize: "1rem",
+      lineHeight: "1.75",
+    },
+    xl: {
+      fontSize: "1rem",
+      lineHeight: "1.75",
+    },
   },
 };
 
 // COLOR
-const color_dark = {
+const colorDark = {
   common: {
     black: "#000",
     white: "#FFF",
@@ -85,6 +292,9 @@ const color_dark = {
     "light-1": "#999999",
     "light-2": "#98A2B3",
   },
+  custom_purple: {
+    main: "#D622DA",
+  },
 
   text: {
     primary: "#FFF",
@@ -95,4 +305,4 @@ const color_dark = {
   },
 };
 
-export { breakpoints, inter, fontWeight, fontSize, color_dark };
+export { breakpoints, inter, fontWeight, fontStyle, colorDark };

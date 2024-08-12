@@ -2,8 +2,8 @@
 
 // https://mui.com/material-ui/customization/default-theme/
 
-import { createTheme, responsiveFontSizes } from "@mui/material";
-import { breakpoints, color_dark, fontWeight, inter, fontSize } from "./theme";
+import { createTheme } from "@mui/material";
+import { breakpoints, colorDark, fontStyle, fontWeight, inter } from "./theme";
 
 const header_font_family = {
   fontFamily: inter.style.fontFamily,
@@ -18,63 +18,63 @@ const default_theme = createTheme({
   },
 });
 
-const darkTheme = responsiveFontSizes(
-  createTheme({
-    ...default_theme,
-    palette: {
-      mode: "dark",
-      ...color_dark,
+const font_types = [
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "subtitle1",
+  "subtitle2",
+  "body1",
+  "body2",
+  "button",
+];
+
+const createFontStyles = (ftype) => {
+  const isHeader = ftype[0] === "h";
+  return {
+    ...(isHeader ? header_font_family : {}),
+    fontSize: fontStyle[ftype].xs.fontSize,
+    lineHeight: fontStyle[ftype].xs.lineHeight,
+
+    [default_theme.breakpoints.up("sm")]: {
+      fontSize: fontStyle[ftype].sm.fontSize,
+      lineHeight: fontStyle[ftype].sm.lineHeight,
     },
-    typography: {
-      fontFamily: inter.style.fontFamily,
 
-      h1: {
-        ...header_font_family,
-        fontSize: fontSize.h1.main,
-
-        // ----- MANUAL CUSTOM FONT SIZE -----
-        // [default_theme.breakpoints.up("xl")]: {
-        //   fontSize: fontSize.h1.xl,
-        // },
-      },
-      h2: {
-        ...header_font_family,
-        fontSize: fontSize.h2.main,
-      },
-      h3: {
-        ...header_font_family,
-        fontSize: fontSize.h3.main,
-      },
-      h4: {
-        ...header_font_family,
-        fontSize: fontSize.h4.main,
-      },
-      h5: {
-        ...header_font_family,
-        fontSize: fontSize.h5.main,
-      },
-      h6: {
-        ...header_font_family,
-        fontSize: fontSize.h6.main,
-      },
-
-      subtitle1: {
-        fontSize: fontSize.subtitle1.main,
-      },
-      subtitle2: {
-        fontSize: fontSize.subtitle2.main,
-      },
-      body1: {
-        fontSize: fontSize.body1.main,
-      },
-      body2: {
-        fontSize: fontSize.body2.main,
-      },
-      button: {
-        fontSize: fontSize.button.main,
-      },
+    [default_theme.breakpoints.up("md")]: {
+      fontSize: fontStyle[ftype].md.fontSize,
+      lineHeight: fontStyle[ftype].md.lineHeight,
     },
-  })
-);
+
+    [default_theme.breakpoints.up("lg")]: {
+      fontSize: fontStyle[ftype].lg.fontSize,
+      lineHeight: fontStyle[ftype].lg.lineHeight,
+    },
+
+    [default_theme.breakpoints.up("xl")]: {
+      fontSize: fontStyle[ftype].xl.fontSize,
+      lineHeight: fontStyle[ftype].xl.lineHeight,
+    },
+  };
+};
+const custom_font = font_types.reduce((acc, ftype) => {
+  acc[ftype] = createFontStyles(ftype);
+  return acc;
+}, {});
+
+const darkTheme = createTheme({
+  ...default_theme,
+  palette: {
+    mode: "dark",
+    ...colorDark,
+  },
+  typography: {
+    fontFamily: inter.style.fontFamily,
+    ...custom_font,
+  },
+});
 
 export { darkTheme };
