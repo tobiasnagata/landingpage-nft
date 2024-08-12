@@ -191,6 +191,7 @@ const Hero = () => {
 
           {/* SPONSOR */}
           <Grid
+            item
             xs={12}
             sx={{
               display: { xs: "block", md: "flex" },
